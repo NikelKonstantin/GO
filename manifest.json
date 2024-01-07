@@ -13,6 +13,7 @@
           "type": "image/png"
       }
   ],
+  "start_url": "https://nikelkonstantin.github.io/project-1/",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone"
