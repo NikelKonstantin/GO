@@ -26,7 +26,7 @@
                 <ul>
                     <li><a href="#halls">Залы</a></li>
                     <li><a href="#aboutus">О нас</a></li>
-                    <li><a href="">Бронь</a></li>
+                    <li><a href="#booking">Бронь</a></li>
                     <li><a href="">Отзывы</a></li>
                     <li><a href="#contacts">Контакты</a></li>
                 </ul>
@@ -93,6 +93,84 @@
                     <a href="neonstal.html">Neon stal</a>
                 </li>
                 </ol>
+
+                <h2>Забронировать</h2>
+              <form id="booking" action="https://jsonplaceholder.typicode.com/posts" 
+              method="POST">
+                <fieldset>
+                  <label><input type="radio" name="breakfast" value="80`s vibes">80`s vibes</label>
+                  <label><input type="radio" name="breakfast" value="Star wars">Star wars</label>
+                  <label><input type="radio" name="breakfast" value="Wild weat">Wild weat</label>
+                  <label><input type="radio" name="breakfast" value="Neon stal">Neon stal</label>
+                </fieldset>
+
+                <fieldset>
+                <legend>Собери набор развлечений</legend>
+                  <fieldset>
+                    <legend>Приставка:</legend>
+                      <label><input type="radio" name="Prefix" value="Play Station">Play Station</label>
+                      <label><input type="radio" name="Prefix" value="Sega Mega Drive">Sega Mega Drive</label>
+                      <label><input type="radio" name="Prefix" value="X-box One S">X-box One S</label>
+                      <label><input type="radio" name="Prefix" value="Dendy">Dendy</label>
+                  </fieldset>
+
+                  <fieldset>
+                    <legend>Настольные игры:</legend>
+                      <label><input type="checkbox" name="board game" value="Jenga">Jenga</label>
+                      <label><input type="checkbox" name="board game" value="Monopoly">Monopoly</label>
+                      <label><input type="checkbox" name="board game" value="Munchkin">Манчкин</label>
+                      <label><input type="checkbox" name="board game" value="Alias">Alias</label>
+                  </fieldset>
+
+                  <fieldset>
+                    <legend>Дополнительно:</legend>
+                    <label><input type="checkbox" name="additionally" value="karaoke">Караоке</label>
+                    <label><input type="checkbox" name="additionally" value="VR">VR</label>
+                  </fieldset>                  
+                </fieldset>
+                
+                <fieldset>
+                  <legend>Выбери дату и время</legend>
+                    <label>
+                    Дата*
+                      <input type="date" name="Data" required>
+                    </label>
+                    <label>
+                    Время*
+                      <input type="time" name="Time" required>
+                    </label>
+                    <br>
+                    <label>
+                    Количество человек*
+                      <input type="number" name="number of people" required>
+                    </label>
+                    <br>
+                    <label>
+                    Имя*
+                      <input type="text" name="name" required>
+                    </label>
+                    <br>
+                    <label>
+                    Фамилия*
+                      <input type="text" name="surname" required>
+                    </label>
+                    <br>
+                    <label>
+                    Номер телефона*
+                      <input type="tel" name="Phone" required>
+                    </label>
+                    <br>
+                    <label><input type="checkbox" name="Age" value="I am over 18 years old">
+                    Я старше 18 лет
+                    </label>
+                </fieldset>
+                
+                  <button type="submit">Забронировать</button>
+                  <label><input type="checkbox" name="processing" value="I agree to data processing" required>
+                  Согласен на обработку данных
+                  </label>
+              </form>
+
             </div>
             <div id="aboutus">
                 <h2>О нас</h2>
